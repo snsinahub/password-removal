@@ -1,0 +1,21 @@
+name: 'sample'
+description: 'Moving tag'
+author: 'snsinahub'
+inputs:
+  tag_name:
+    required: true
+  commit_sha:
+    required: true
+  token:
+    required: true
+outputs:
+  text:
+    description: 'A boolean value to indicate an exact match was found for the primary key'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.tag_name }}
+    - ${{ inputs.commit_sha }}
+    - ${{ inputs.token }}
+    - 'g%Hdc&6'

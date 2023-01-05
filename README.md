@@ -1,5 +1,3 @@
-# remove-password-template
+# remove-password
 
-Add some text here
-
-Here is my text here
+You can clone this repository and move it to your account/organization for practice
